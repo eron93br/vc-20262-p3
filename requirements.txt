@@ -1,0 +1,15 @@
+# ── Aquisição do vídeo ─────────────────────────────────────────────
+yt-dlp>=2024.1.0            # download de vídeos do YouTube (requer ffmpeg no PATH)
+
+# ── Detecção + rastreamento ────────────────────────────────────────
+ultralytics>=8.2.0          # YOLOv8/YOLO11 + ByteTrack embutido
+torch>=2.3.0                # backend (CPU, CUDA ou MPS no Apple Silicon)
+torchvision>=0.18.0
+opencv-python>=4.10.0       # leitura de vídeo, desenho, homografia, ORB
+
+# ── Análise ────────────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.0.0
+scikit-learn>=1.5.0         # K-Means (times) e regressão logística (eXP)
+matplotlib>=3.8.0           # campo, mapas de calor e superfícies de eXP
+tqdm>=4.66.0
